@@ -1,70 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: #78c1f3;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f4f8;
-}
-
-.todo-container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0 0 20px;
-    font-size: 24px;
-}
-
-.input-section {
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 25px;
+    width: 550px;
+    border-radius: 10px;
+  }
+  .todo-header {
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
-}
-
-#task-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-}
-
-#add-task-btn {
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-#add-task-btn:hover {
-    background-color: #0056b3;
-}
-
-#task-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.task {
+    padding-left: 5px;
+    justify-content: center;
+  }
+  .todo-body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    border-radius: 4px;
-}
-
-.task.completed {
-    text-decoration: line-through;
-    color: #6c757d;
-}
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .todo-body input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+  
+  .todo-body img {
+    cursor: pointer;
+    border-radius: 40px;
+    height: 55px;
+    width: 55px;
+    padding: 15px;
+    //background: limegreen;
+  }

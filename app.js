@@ -17,6 +17,7 @@ addTaskBtn.addEventListener('click', () => {
     taskInput.value = '';
 });
 
+
 // Create task element
 function createTaskElement(taskText) {
     const task = document.createElement('li');
@@ -67,3 +68,14 @@ function loadTasks() {
         taskList.appendChild(task);
     });
 }
+
+// Edit task
+taskContent.addEventListener('dblclick', () => {
+    const newTaskText = prompt("Edit task:", taskContent.textContent);
+    if (newTaskText !== null && newTaskText.trim() !== '') {
+        taskContent.textContent = newTaskText.trim();
+        saveTasks();
+    }
+});
+
+

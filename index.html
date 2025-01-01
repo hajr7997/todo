@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="todo-container">
-        <h1>To-Do App</h1>
-        <div class="input-section">
-            <input type="text" id="task-input" placeholder="Add a new task...">
-            <button id="add-task-btn">Add</button>
-        </div>
-        <ul id="task-list"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Application - By Sharathchandar.K</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="script.js"></script>
+    <div class="container"></div>
+    <div class="todo-header">
+        <h2>ToDo List</h2>
+   </div>
+   <div class="todo-body">
+    <input
+        type="text"
+        id="todoText"
+        class="todo-input"
+        placeholder="Add your items"
+    />
+    <img
+        src="plus.jpg"
+        alt="+"
+        id="AddUpdateClick"
+        onclick="CreateToDoItems();"
+    />
     </div>
-    <script src="app.js"></script>
-</body>
+  </body>
 </html>
